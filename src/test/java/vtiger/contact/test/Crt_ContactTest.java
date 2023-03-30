@@ -37,13 +37,11 @@ public class Crt_ContactTest extends Base_class {
 		
 		Assert.assertTrue(true);
 		System.out.println("contact createed with org");
-		
-		
-		
-		
-		
-		
-		
+				
+	}
+	@Test
+	public void newq() {
+		System.out.println("except smoke");
 	}
 
 }

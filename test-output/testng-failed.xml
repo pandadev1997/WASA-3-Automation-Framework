@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="vtiger.organaisation.test.CreatorganaisationTest">
+      <class name="vtiger.contact.test.Crt_ContactTest">
         <methods>
+          <include name="createcontact"/>
           <include name="closeDB"/>
           <include name="launching"/>
           <include name="logout"/>
           <include name="database"/>
-          <include name="crtOrganaizationTest"/>
           <include name="closebrowser"/>
           <include name="login"/>
         </methods>
-      </class> <!-- vtiger.organaisation.test.CreatorganaisationTest -->
+      </class> <!-- vtiger.contact.test.Crt_ContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
