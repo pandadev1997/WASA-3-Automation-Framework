@@ -17,7 +17,7 @@ public class CreatingNewContactPage extends WebDriver_Utility {
 	@FindBy(xpath="//input[@name='account_name']/following-sibling::img[@alt='Select']")
 	private WebElement orglookupicon;
 	
-	@FindBy(name="search_txt")
+	@FindBy(name="search_text")
 	private WebElement searchtext;
 	
 	@FindBy(name="search")

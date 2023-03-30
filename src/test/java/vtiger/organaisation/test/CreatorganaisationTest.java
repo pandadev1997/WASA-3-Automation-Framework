@@ -15,7 +15,7 @@ import vtiger.ObjectRepository.Organaizationpage;
 @Listeners(vtiger.Generalutility.ListnersImplementtion.class)
 public class CreatorganaisationTest extends Base_class {
     
-	@Test
+	@Test(groups = {"smoke","regression"})
 	public void crtOrganaizationTest() throws Exception {
 		
 		//PropertyFile_utility putil=new PropertyFile_utility();

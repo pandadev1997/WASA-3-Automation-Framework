@@ -21,12 +21,12 @@ public class Base_class {
 	public PropertyFile_utility pu=new PropertyFile_utility();
 	public static WebDriver sdriver;//for listners only
 	public WebDriver driver;
-	@BeforeSuite
+	@BeforeSuite(groups = {"smoke"})
 	public void database() {
 		System.out.println("----Data base connection happen sucessfully---");
 	}
 	
-	@BeforeClass
+	@BeforeClass(groups = {"smoke"})
 	public void launching() throws Exception {
 		String BROWSER = pu.readDataFromPropertyFile("browser");
 		String URL = pu.readDataFromPropertyFile("url");
@@ -50,7 +50,7 @@ public class Base_class {
 	}
 	
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"smoke"})
 	public void login() throws Exception {
 		String UN = pu.readDataFromPropertyFile("username");
 		String PW = pu.readDataFromPropertyFile("password");
@@ -59,17 +59,17 @@ public class Base_class {
 		//Thread.sleep(5000);
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups = {"smoke"})
 	public void logout() {
 		HomePage ho=new HomePage(driver);
 		ho.logOutApp(driver);	
 	}
 	
-	@AfterClass
+	@AfterClass(groups = {"smoke"})
 	public void closebrowser() {
 		driver.quit();
 	}
-	@AfterSuite
+	@AfterSuite(groups = {"smoke"})
 	public void closeDB() {
 		System.out.println("database connection closed");
 	}
