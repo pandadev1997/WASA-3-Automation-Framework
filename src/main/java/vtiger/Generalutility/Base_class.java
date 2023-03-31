@@ -6,9 +6,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import vtiger.ObjectRepository.HomePage;
@@ -25,10 +28,12 @@ public class Base_class {
 	public void database() {
 		System.out.println("----Data base connection happen sucessfully---");
 	}
-	
-	@BeforeClass(groups = {"smoke"})
-	public void launching() throws Exception {
-		String BROWSER = pu.readDataFromPropertyFile("browser");
+	//launch the browser-Run time polymorphism
+	@Parameters("browser")
+	@BeforeTest   //For parallel Execution
+	//@BeforeClass(groups = {"smoke","regression"})
+	public void launching(String BROWSER) throws Exception {
+		//String BROWSER = pu.readDataFromPropertyFile("browser");
 		String URL = pu.readDataFromPropertyFile("url");
 		
 		if(BROWSER.equalsIgnoreCase("chrome")) {
@@ -50,7 +55,7 @@ public class Base_class {
 	}
 	
 	
-	@BeforeMethod(groups = {"smoke"})
+	@BeforeMethod(groups = {"smoke","regression"})
 	public void login() throws Exception {
 		String UN = pu.readDataFromPropertyFile("username");
 		String PW = pu.readDataFromPropertyFile("password");
@@ -59,17 +64,17 @@ public class Base_class {
 		//Thread.sleep(5000);
 	}
 	
-	@AfterMethod(groups = {"smoke"})
+	@AfterMethod(groups = {"smoke","regression"})
 	public void logout() {
 		HomePage ho=new HomePage(driver);
 		ho.logOutApp(driver);	
 	}
-	
-	@AfterClass(groups = {"smoke"})
+	@AfterTest    //for parallel Execution
+	//@AfterClass(groups = {"smoke","regression"})
 	public void closebrowser() {
 		driver.quit();
 	}
-	@AfterSuite(groups = {"smoke"})
+	@AfterSuite(groups = {"smoke","regression"})
 	public void closeDB() {
 		System.out.println("database connection closed");
 	}

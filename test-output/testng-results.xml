@@ -1,70 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-30T11:25:17 IST" name="Suite" finished-at="2023-03-30T11:26:00 IST" duration-ms="42805">
+  <suite started-at="2023-03-31T11:52:32 IST" name="Suite" finished-at="2023-03-31T11:53:21 IST" duration-ms="49586">
     <groups>
       <group name="regression">
-        <method signature="CreatorganaisationTest.crtOrganaizationTest()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@7db12bb6]" name="crtOrganaizationTest" class="vtiger.organaisation.test.CreatorganaisationTest"/>
+        <method signature="CreatorganaisationTest.crtOrganaizationTest()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@59505b48]" name="crtOrganaizationTest" class="vtiger.organaisation.test.CreatorganaisationTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CreatorganaisationTest.crtOrganaizationTest()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@7db12bb6]" name="crtOrganaizationTest" class="vtiger.organaisation.test.CreatorganaisationTest"/>
-        <method signature="Crt_ContactTest.createcontact()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@942a29c]" name="createcontact" class="vtiger.contact.test.Crt_ContactTest"/>
+        <method signature="CreatorganaisationTest.crtOrganaizationTest()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@59505b48]" name="crtOrganaizationTest" class="vtiger.organaisation.test.CreatorganaisationTest"/>
+        <method signature="Crt_ContactTest.createcontact()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" name="createcontact" class="vtiger.contact.test.Crt_ContactTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-03-30T11:25:17 IST" name="Test" finished-at="2023-03-30T11:26:00 IST" duration-ms="42805">
+    <test started-at="2023-03-31T11:52:32 IST" name="Test-Runner-2" finished-at="2023-03-31T11:53:21 IST" duration-ms="49535">
       <class name="vtiger.contact.test.Crt_ContactTest">
-        <test-method is-config="true" signature="launching()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@942a29c]" started-at="2023-03-30T11:25:41 IST" name="launching" finished-at="2023-03-30T11:25:48 IST" duration-ms="7029" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launching -->
-        <test-method is-config="true" signature="login()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@942a29c]" started-at="2023-03-30T11:25:48 IST" name="login" finished-at="2023-03-30T11:25:50 IST" duration-ms="1924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createcontact()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@942a29c]" started-at="2023-03-30T11:25:50 IST" name="createcontact" finished-at="2023-03-30T11:25:58 IST" duration-ms="8552" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createcontact -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@942a29c]" started-at="2023-03-30T11:25:58 IST" name="logout" finished-at="2023-03-30T11:25:59 IST" duration-ms="1044" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@942a29c]" started-at="2023-03-30T11:25:59 IST" name="closebrowser" finished-at="2023-03-30T11:26:00 IST" duration-ms="654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- vtiger.contact.test.Crt_ContactTest -->
-      <class name="vtiger.organaisation.test.CreatorganaisationTest">
-        <test-method is-config="true" signature="database()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@7db12bb6]" started-at="2023-03-30T11:25:17 IST" name="database" finished-at="2023-03-30T11:25:17 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="database()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:52:32 IST" name="database" finished-at="2023-03-31T11:52:32 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- database -->
-        <test-method is-config="true" signature="launching()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@7db12bb6]" started-at="2023-03-30T11:25:17 IST" name="launching" finished-at="2023-03-30T11:25:29 IST" duration-ms="11742" status="PASS">
+        <test-method is-config="true" signature="launching(java.lang.String)[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:52:32 IST" name="launching" finished-at="2023-03-31T11:52:53 IST" duration-ms="21126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching -->
-        <test-method is-config="true" signature="login()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@7db12bb6]" started-at="2023-03-30T11:25:29 IST" name="login" finished-at="2023-03-30T11:25:31 IST" duration-ms="1954" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:52:53 IST" name="login" finished-at="2023-03-31T11:52:57 IST" duration-ms="3555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="crtOrganaizationTest()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@7db12bb6]" started-at="2023-03-30T11:25:31 IST" name="crtOrganaizationTest" finished-at="2023-03-30T11:25:39 IST" duration-ms="7871" status="PASS">
+        <test-method signature="createcontact()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:52:57 IST" name="createcontact" finished-at="2023-03-31T11:53:11 IST" duration-ms="14573" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crtOrganaizationTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@7db12bb6]" started-at="2023-03-30T11:25:39 IST" name="logout" finished-at="2023-03-30T11:25:40 IST" duration-ms="1308" status="PASS">
+        </test-method> <!-- createcontact -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:53:11 IST" name="logout" finished-at="2023-03-31T11:53:13 IST" duration-ms="1764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@7db12bb6]" started-at="2023-03-30T11:25:40 IST" name="closebrowser" finished-at="2023-03-30T11:25:41 IST" duration-ms="689" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:53:13 IST" name="login" finished-at="2023-03-31T11:53:16 IST" duration-ms="3157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="newq()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:53:16 IST" name="newq" finished-at="2023-03-31T11:53:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newq -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:53:16 IST" name="logout" finished-at="2023-03-31T11:53:21 IST" duration-ms="4446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:53:21 IST" name="closebrowser" finished-at="2023-03-31T11:53:21 IST" duration-ms="889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@7db12bb6]" started-at="2023-03-30T11:26:00 IST" name="closeDB" finished-at="2023-03-30T11:26:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:vtiger.contact.test.Crt_ContactTest@63376bed]" started-at="2023-03-31T11:53:21 IST" name="closeDB" finished-at="2023-03-31T11:53:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDB -->
+      </class> <!-- vtiger.contact.test.Crt_ContactTest -->
+    </test> <!-- Test-Runner-2 -->
+    <test started-at="2023-03-31T11:52:32 IST" name="Test-Runner-1" finished-at="2023-03-31T11:53:21 IST" duration-ms="49586">
+      <class name="vtiger.organaisation.test.CreatorganaisationTest">
+        <test-method is-config="true" signature="launching(java.lang.String)[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@59505b48]" started-at="2023-03-31T11:52:32 IST" name="launching" finished-at="2023-03-31T11:53:21 IST" duration-ms="49568" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:51285/devtools/browser/d8a6c7a4-39fc-4b65-8a5a-ec301bfe8875
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-B8G85UAF', ip: '192.168.62.62', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51285/devtools/browser/d8a6c7a4-39fc-4b65-8a5a-ec301bfe8875
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-B8G85UAF', ip: '192.168.62.62', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at vtiger.Generalutility.Base_class.launching(Base_class.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching -->
+        <test-method is-config="true" signature="login()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@59505b48]" started-at="2023-03-31T11:53:21 IST" name="login" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680243801939" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="crtOrganaizationTest()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@59505b48]" started-at="2023-03-31T11:53:21 IST" name="crtOrganaizationTest" finished-at="2023-03-31T11:53:21 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:51285/devtools/browser/d8a6c7a4-39fc-4b65-8a5a-ec301bfe8875
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-B8G85UAF', ip: '192.168.62.62', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51285/devtools/browser/d8a6c7a4-39fc-4b65-8a5a-ec301bfe8875
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-B8G85UAF', ip: '192.168.62.62', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at vtiger.Generalutility.Base_class.launching(Base_class.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crtOrganaizationTest -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@59505b48]" started-at="2023-03-31T11:53:21 IST" name="closebrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680243801945" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:vtiger.organaisation.test.CreatorganaisationTest@59505b48]" started-at="2023-03-31T11:53:21 IST" name="logout" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680243801945" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
       </class> <!-- vtiger.organaisation.test.CreatorganaisationTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test-Runner-1 -->
   </suite> <!-- Suite -->
 </testng-results>
